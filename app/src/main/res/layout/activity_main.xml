@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Covid Indonesia"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/purple_200"
+            android:layout_centerHorizontal="true"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/judul"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card1"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp">
+             <TextView
+                 android:id="@+id/positif"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Banyaknya orang yang positif Covid-19"
+                 android:textColor="@color/white"
+                 android:textStyle="bold"
+                 android:textSize="16dp"
+                 android:gravity="center"/>
+             <TextView
+                 android:id="@+id/totpositif"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="4259143"
+                 android:gravity="center"
+                 android:textSize="20dp"
+                 android:textColor="@color/white"
+                 android:layout_marginTop="25dp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/judul"
+            android:layout_toRightOf="@id/card1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card1"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp">
+
+                <TextView
+                    android:id="@+id/dirawat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banyaknya orang yang dirawat Covid-19"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/totdirawat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5158"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/card1"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card3"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sembuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Banyaknya orang yang sembuh Covid-19"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totsembuh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="4110049"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/card2"
+            android:layout_toRightOf="@id/card3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card4"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp">
+
+                <TextView
+                    android:id="@+id/meninggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banyaknya orang yang meninggal Covid-19"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/totmeninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="143936"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/card3"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card5"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp">
+
+                <TextView
+                    android:id="@+id/lastupdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Update an terakhir "
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/last"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2021-12-12"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="25dp"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
